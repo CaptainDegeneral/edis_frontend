@@ -2,7 +2,7 @@ import CryptoJS from 'crypto-js';
 import router from '@/router';
 import { useUserStore } from '@/store/user-store';
 
-const ENCRYPTION_KEY = import.meta.env.ENCRYPTION_KEY;
+const ENCRYPTION_KEY = 'Y#CQ&Hq3#bf#Tm3#Rv@$F2!#FvA33eFFb#%zG8ZfNXoX68kVi*3d4Ugv*2tsE7&i&CoU2B*J$&fvzc2OP9x%j4gO5#4@6Mem$6r$#6P#OB4#dvo&G@06%1s%^st2#S9ni#q5&Sh^*Cq9%71ga999CC';
 
 function encrypt(data) { return CryptoJS.AES.encrypt(JSON.stringify(data), ENCRYPTION_KEY).toString(); }
 
