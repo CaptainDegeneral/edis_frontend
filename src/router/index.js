@@ -12,7 +12,7 @@ const routes = [
   { path: '/', component: Home, meta: { requiresAuth: true } },
   { path: '/signup', component: SignUp },
   { path: '/signin', component: SignIn },
-  { path: '/verify-email', component: VerifyEmail },
+  { path: '/verify-email/:token', component: VerifyEmail },
   { path: '/password-reset', component: PasswordReset },
   { path: '/password-reset/:uidb64/:token', name: 'PasswordResetConfirm', component: PasswordResetConfirm },
 ]
